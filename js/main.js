@@ -1,13 +1,15 @@
-var nome = prompt ("scrivi qui il tuo nome");
+//ll programma dovrà chiedere all’utente il numero di chilometri
+//e l’età
+//e dovrà calcolare il prezzo totale del viaggio.
+//Il prezzo del biglietto è definito in base ai km (0.21 €cent al km)
+//ma c’è uno sconto del 20% per i minorenni
+//e del 40% per gli over 65
+var km = prompt ("inserisca il numero di chilometri che dovrà percorrere");
 
-console.log(nome);
+console.log(km);
 
-var cognome = prompt ("mi serve anche il tuo cognome")
+var eta = prompt ("inserisca la sua età")
 
-console.log(cognome);
+console.log(eta);
 
-var colore = prompt ("ora il tuo colore preferito")
-
-console.log(colore);
-
-document.getElementById('mioid').innerHTML = nome + cognome + colore + "<strong>19</strong>";
+var prezzo = km * "0.21";
