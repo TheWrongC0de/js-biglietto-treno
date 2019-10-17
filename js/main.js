@@ -8,8 +8,25 @@ var km = prompt ("inserisca il numero di chilometri che dovrà percorrere");
 
 console.log(km);
 
-var eta = prompt ("inserisca la sua età")
+var eta = prompt ("inserisca la sua età");
 
 console.log(eta);
 
-var prezzo = km * "0.21";
+var prezzo = km * 0,21;
+
+console.log(prezzo);
+
+var sconto;
+
+
+if (eta < 18) {
+  sconto = (prezzo / 100) * 20;
+  prezzo -= sconto;
+
+
+} else if (eta > 65){
+  sconto = (prezzo / 100) * 40;
+  prezzo -=  sconto;
+}
+
+document.mioid('h1').innerHTML = 'Il costo del tuo biglietto è: 'prezzo + ' euro;';
